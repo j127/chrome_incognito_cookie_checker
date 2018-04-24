@@ -1,5 +1,8 @@
 # Chrome Incognito Cookie Tester
 
+This is a quick test of Google Chrome's Incognito Mode privacy capabilities. Are cookies that are set in normal windows readable by incognito windows?
+
+The answer appears to be no. Feel free to create an issue or fork this repo and fix it, if I've missed something.
 
 ## LICENSES
 

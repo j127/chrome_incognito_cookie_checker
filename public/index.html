@@ -10,6 +10,7 @@
     <body>
         <h1>Is Chrome's Incognito Mode Really Private?</h1>
         <p>This page checks to see if Chrome's Incognito Mode can read cookies that are set in non-incognito windows.</p>
+        <div id="welcomeMessage"></div>
         <p>Follow these steps to use this script:</p>
         <ol>
             <li>Close all of your incognito windows in Chrome.</li>
@@ -19,21 +20,16 @@
             <li>Visit the page in the incognito window and click the "Get Saved Data" button.</li>
             <li>If it loads your form submission, then the incognito window and normal window are sharing cookies.</li>
         </ol>
+        <p><strong>Note:</strong> we don't save any of your data or use the cookies for anything.</p>
         <hr>
         <form id="dataEntryForm">
             <h2>Data Entry Form</h2>
-            <p>Fill this out in your <strong>non-incognito</strong> window.</p>
-            <input type="text" placeholder="Type a word here">
+            <p>Fill this field out in your <strong>non-incognito</strong> window. Just type in any word. We'll save it in the browser and see if the incognito window will allow tracking you by the cookie.</p>
+            <input id="dataEntryFormInput" type="text" placeholder="Type a word here">
             <button>Save</button>
-            <div class="output"></div>
+            <div id="dataEntryFormOutputDiv"></div>
         </form>
 
-        <form id="dataRetrievalForm">
-            <h2>Data Retrieval Form</h2>
-            <p>After submitting the above form, click the button below in your <strong>incognito</strong> window.</p>
-            <button>Get Saved Data</button>
-            <div class="output"></div>
-        </form>
         <script src="/js/js.cookie.js"></script>
         <script src="/js/main.js"></script>
     </body>
