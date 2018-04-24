@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
         showWelcomeMessage(html);
     }
 
-    // event handlers
     dataEntryForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -24,9 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
         dataEntryFormOutputDiv.classList.add('highlight');
     });
 
-    /**
-     * Gets all visible cookies and prints them in the welcome message area.
-     */
     function showWelcomeMessage(html) {
         var welcomeMessageDiv = document.getElementById('welcomeMessage');
         welcomeMessageDiv.innerHTML = html;
